@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% block content %}
+<!-- Main component for a primary marketing message or call to action -->
+<h1>{{ subtitle }}</h1>
+<div id="block1chain1well" class="jumbotron well well-success">
+  <form class="form-horizontal">
+    <div class="form-group">
+      <label for="block1chain1number" class="col-sm-2 control-label">        
+        Block:      
+      </label>
+      <div class="col-sm-10">
+        <div class="input-group">
+          <span class="input-group-addon">#</span>
+          <input id="block1chain1number" value="1" onkeyup="updateHash(1, 1);" 
+            class="form-control" type="text">
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="block1chain1nonce" class="col-sm-2 control-label">
+        Nonce:
+      </label>
+      <div class="col-sm-10">
+        <input id="block1chain1nonce" value="2823" onkeyup="updateHash(1, 1);" 
+          class="form-control" type="text">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="col-sm-2 control-label">Data:</label>
+      <div class="col-sm-10">
+        <textarea id="block1chain1data" class="form-control" rows="10"
+          onkeyup="updateHash(1, 1);"></textarea>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="col-sm-2 control-label">Hash:</label>
+      <div class="col-sm-10">
+        <input id="block1chain1hash" class="form-control" disabled="" type="text" 
+        value="000b07fd81c1770b514fb2998527b682c4600e0e76868011bae89a265505f652">
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-2">
+        <i class="icon-spinner icon-spin icon-large"></i>
+      </div>
+      <div class="col-sm-10">
+        <button id="block1chain1mineButton" data-style="expand-right" 
+          class="btn btn-primary ladda-button">
+          <span class="ladda-label">Mine</span>
+        </button>
+      </div>
+    </div>
+  </div>
+<script>
+$(function() {
+  mineButtonAnimation(1, 1);
+  updateHash(1, 1);   
+});
+
+function getText(block, chain) {
+  return $('#block'+block+'chain'+chain+'number').val() +
+         $('#block'+block+'chain'+chain+'nonce').val() +
+         $('#block'+block+'chain'+chain+'data').val();
+}
+
+function mineButtonAnimation(block, chain) {
+  $('#block'+block+'chain'+chain+'mineButton').click(function(e) {
+      e.preventDefault();
+      var l = Ladda.create(this);
+      l.start();
+      setTimeout(function() {
+          mine(block, chain, false);
+          l.stop();
+        }, 250); // give UI time to update
+    });
+}
+</script>
+{% endblock %}

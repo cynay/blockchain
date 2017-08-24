@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+  {% for post in posts %}
+    <!-- Main component for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <h1>{{ post.title }}</h1>
+      <p>{{ post.body }}</p>
+      <p></p>
+      </p>
+    </div>
+  {% endfor %}
+{% endblock %}
