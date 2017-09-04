@@ -1,4 +1,4 @@
-Blockchain [![icon](https://maxcdn.icons8.com/Share/icon/Logos//blockchain1600.png)](https://maxcdn.icons8.com/Share/icon/Logos//blockchain1600.png) 
+Blockchain [![icon](https://maxcdn.icons8.com/Share/icon/Logos//blockchain1600.png)](https://maxcdn.icons8.com/Share/icon/Logos//blockchain1600.png =300x) 
 ========
 
 Blockchain Project for Learning and Demonstration
@@ -17,7 +17,7 @@ usage
 -----
 
 Some usage samples:
-
+*ToDo*
 
 requirements
 ------------
@@ -35,7 +35,7 @@ install
 
 * 
 
-*Note:* whatever
+*ToDo* 
 
 license
 -------

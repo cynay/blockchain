@@ -1,20 +1,12 @@
 from flask import render_template
 from app import app
 
-item = 'block'
-
-@app.route('/'+item)
+@app.route('/block')
 def block():
-  posts = [
-    {
-      'title' : 'first post',
-      'body' : 'This is a test msg'
-    }
-  ]
   
   project = {'name' : 'Blockchain Tutorial'}
-  return render_template(item+'.html',
+  return render_template('block.html',
                           title='vendetta.ch',
-                          subtitle=item,
+                          subtitle='block',
                           project=project,
-                          posts=posts)
+                          )

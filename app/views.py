@@ -11,9 +11,13 @@ def index():
                 technologies. """
     },
     {
-      'title' : 'Help',
-      'body' : """If anyone would like to work together on a project please 
-                contact me."""
+      'title' : 'Contributing',
+      'body' : """As an open source project, mitmproxy welcomes contributions 
+                of all forms. If you would like to bring the project forward, 
+                please consider contributing in the following areas:
+                
+                ToDo ...
+                """
     },
   ]
   
