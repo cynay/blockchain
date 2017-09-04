@@ -1,4 +1,4 @@
-Blockchain [![icon](https://maxcdn.icons8.com/Share/icon/Logos//blockchain1600.png)](https://maxcdn.icons8.com/Share/icon/Logos//blockchain1600.png =300x) 
+Blockchain ![icon](http://www.infotechlead.com/wp-content/uploads/2016/06/Blockchain-Logo.png)
 ========
 
 Blockchain Project for Learning and Demonstration
