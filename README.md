@@ -1,4 +1,6 @@
-Blockchain ![icon](http://www.infotechlead.com/wp-content/uploads/2016/06/Blockchain-Logo.png)
+![icon](http://www.infotechlead.com/wp-content/uploads/2016/06/Blockchain-Logo.png)
+
+Blockchain
 ========
 
 Blockchain Project for Learning and Demonstration
