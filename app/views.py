@@ -12,7 +12,7 @@ def index():
     },
     {
       'title' : 'Contributing',
-      'body' : """As an open source project, mitmproxy welcomes contributions 
+      'body' : """As an open source project, we  welcomes contributions 
                 of all forms. If you would like to bring the project forward, 
                 please consider contributing in the following areas:
                 
