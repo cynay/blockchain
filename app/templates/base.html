@@ -7,7 +7,7 @@
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <meta name="description" content="">
   <meta name="author" content="">
-  <link rel="icon" href="../../favicon.ico">
+  <link rel="icon" href="../static/img/favicon.ico">
   <title>{{ title }} - blockchain</title>
   <!-- Bootstrap core CSS -->
   <link href="../static/css/bootstrap.min.css" rel="stylesheet">
@@ -65,7 +65,7 @@
         <ul class="nav navbar-nav navbar-right">
           <li>
             <a href="http://vendetta.ch">About</a>
-          </li>
+   </li>
           <li>
             <a href="mailto:v@vendetta.ch?Subject=Blockchain:">Contact</a>
           </li>
@@ -80,8 +80,20 @@
   </div><!-- /container -->
   <!-- Bootstrap core JavaScript    ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="../static/js/jquery.min.js"><\/script>')</script> -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+  <!-- <script>window.jQuery || document.write('<script src="../static/js/jquery.min.js"><\/script>')</script> -->
+  <script>
+  $(document).ready(function() {
+    $('li.active').removeClass('active');
+      $('a[href="' + location.pathname + '"]').closest('li').addClass('active'); 
+      });
+  </script>
+  <!-- <script>
+  &(".nav a").on("click", fuction(){
+    $(".nav").find(".active").removeClass("active");
+    $(this).parent().addClass("active");
+  });
+  </script> -->
 </body>
 </html>
 
